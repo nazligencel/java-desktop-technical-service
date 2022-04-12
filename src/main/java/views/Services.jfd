@@ -1,0 +1,122 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {par t:::p {seq {comp label1:::p:155:p, space :p:388:p, comp lblName:::p:143:p}, seq {space :::p, par l {seq t {space :0:0:x, comp label3:::p::p, space :p:1070:p}, seq {comp panel1:::p::p, space :0:0:x}}}}, space :0:0:x}, seq l {space :::p, par t {comp txtCustomerSearch:::p:572:p, comp scrollPane1:::p:688:p}, space ::4:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, par l {comp label1:::p::p, comp lblName:::p::p}, space s:::p, par b {comp label3::b:p::p, comp txtCustomerSearch::b:p::p}, space :p:13:p, comp scrollPane1:::p:129:p, space s:::p, comp panel1:::::x, space :::p}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 2
+			"resizable": false
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "thisWindowClosing", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Technical Service"
+				"background": new java.awt.Color( 0, 102, 102, 255 )
+				"foreground": new java.awt.Color( 0, 0, 0, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblName"
+				"text": " "
+				"background": new java.awt.Color( 0, 102, 102, 255 )
+				"foreground": new java.awt.Color( 0, 0, 0, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Customer Search"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtCustomerSearch"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "txtCustomerSearchKeyReleased", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tblServiceCustomer"
+					"background": new java.awt.Color( 255, 255, 153, 255 )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {seq {par l {comp label4:::p::p, comp label8::l:p::p, comp label7::l:p::p, comp label5::l:p::p}, space :p:27:p}, seq t {comp label6:::p::p, space s:::p}}, par l {seq {comp scrollPane2:::p:222:p, space :p:55:p, comp lblError:::p:285:p, space ::67:x}, seq l {par l {par t:l::p {comp txtDate::t:::x, comp txtStatus::t::81:x}, comp txtTitle::l:p:81:p, comp txtDays::t:p:81:p}, space :::p, par l {comp scrollPane3::::542:x, seq t {space :0:159:x, comp btnAdd:::p::p, space :p:55:p, comp btnUpdate:::p::p, space :p:58:p, comp btnDelete:::p::p, space :p:36:p}}}}}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {seq l {par b {comp label4::b:p::p, comp txtTitle::b:p::p}, space :p:13:p, par b {comp txtDays::b:p::p, comp label5::b:p::p}, space :p:18:p, par b {comp txtStatus::b:p::p, comp label7::b:p::p}, space :p:20:p, par b {comp txtDate::b:p::p, comp label8::b:p::p}, space ::8:x, par t {comp scrollPane2:::p:41:p, seq t {comp label6:::p::p, space :p:17:p}}}, seq l {comp scrollPane3:::p:159:p, space :::p, comp lblError:::p::p, space :::p, par t {comp btnAdd:::p::p, comp btnDelete:::p::p, comp btnUpdate::t:p::p}, space :0:0:x}}, space :::p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 255, 255, 153, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Title"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtTitle"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Days"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtDays"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Details"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane2"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "txtDetails"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblError"
+					"text": " "
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtStatus"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Status"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtDate"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "Date"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane3"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "tblServiceService"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "tblServiceMouseReleased", true ) )
+						addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "tblServiceServiceKeyReleased", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tblServiceServiceMouseClicked", true ) )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnAdd"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/add_icon.png" )
+					"background": &Color0 new java.awt.Color( 153, 255, 255, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnAddServiceClick", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnUpdate"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/update_icon.png" )
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnServiceUpdateClick", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnDelete"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/delete_icon.png" )
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDeleteServiceClick", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 700, 500 )
+		} )
+	}
+}
