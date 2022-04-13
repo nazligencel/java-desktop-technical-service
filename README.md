@@ -1,8 +1,4 @@
 # Java Desktop Application 
-**Name:** Nazlı  <br>
-**Surname:** GENÇEL <br>
-**Email:** nazligencel82@gmail.com  
-  
 
 ## Languages, Technologies and Environments Used in this Project
 | Java/JFrame  | OOP | SQLite | IntelliJ  |
@@ -24,3 +20,8 @@
 | <img src ="https://github.com/nazligencel/java-desktop-technical-service/blob/main/images/mail.png" width ="20px" height = "20px" style="float:left" > E-Mail | <img src ="https://github.com/nazligencel/java-desktop-technical-service/blob/main/images/password.png" width ="20px" height = "20px" style="float:left" > Password | 
 | :------------: | :------------: | 
 |admin@email.com| 12345 |
+
+
+**Name:** Nazlı  <br>
+**Surname:** GENÇEL <br>
+**Email:** nazligencel82@gmail.com  
