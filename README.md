@@ -1,5 +1,14 @@
 # Java Desktop Application 
 
+This application is a technical service application. The user of the application can add their new customers to the customer list and follow the products to be repaired through this system. It can also update or delete customer information.
+You can update or delete the information about the product through this system. Only the system owner user can login to the system. Its products are examined in four cases.
+
+<i><b>Item just arrived status 0</b></br>
+<b>The product has been repaired status 1</b></br>
+<b>Product repaired status 2</b></br>
+<b>Item delivered status 3</b></i></br>
+
+
 ## Languages, Technologies and Environments Used in this Project
 | Java/JFrame  | OOP | SQLite | IntelliJ  |
 | :------------: | :------------: | :------------: | :------------: |
